@@ -1,12 +1,17 @@
 import classes from "./HeaderComponent.module.scss";
 
-function HeaderComponent() {
+type HeaderProps = {
+    name:string;
+    title:string
+}
+
+function HeaderComponent({title,name}:HeaderProps) {
   return (
     <header className={classes.header}>
-      <div>
+      <div className={classes.header__wrapper}>
         {" "}
-        <h1 className={classes.title}>Front End Developer</h1>
-        <h2>Michal Stabrawa</h2>
+        <h1 className={classes.title}>{title}</h1>
+        <h2>{name}</h2>
       </div>
     </header>
   );

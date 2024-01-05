@@ -31,8 +31,8 @@ const sizeIcon: size = "3.5rem";
 function App() {
   return (
     <div className="App">
-       <NavComponent />
-     <HeaderComponent/>
+      <NavComponent />
+      <HeaderComponent title="Front End Developer" name="Michal Stabrawa" />
       <div className="icon_wrapper">
         {" "}
         <FaReact size={sizeIcon} className="icon" color={"#61dafb"} />
