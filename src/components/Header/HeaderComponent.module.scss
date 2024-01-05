@@ -1,0 +1,22 @@
+@import "../../style/main.scss";
+
+.header {
+  font-family: "Roboto", sans-serif;
+  height: calc(100vh - 80px);
+
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+}

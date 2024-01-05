@@ -6,7 +6,7 @@ function NavComponent(): JSX.Element {
     <nav className={classes.nav}>
       <ul className={classes.list}>
         {navList.map((el) => (
-          <li key={el}>{el}</li>
+          <li className={classes.list__item} key={el}>{el}</li>
         ))}
       </ul>
     </nav>
