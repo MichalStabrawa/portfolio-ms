@@ -5,9 +5,12 @@
   height: 80px;
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
   background-color: #000;
-  
+
+  .btn {
+    display:none;
+  }
 
   .list {
     margin: 0;

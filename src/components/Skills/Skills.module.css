@@ -1,0 +1,21 @@
+.skills {
+  padding: 40px 0 80px;
+}
+
+.skills .title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 3rem;
+}
+
+.skills .icon_wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 40px;
+}
+
+.skills .icon_wrapper figure {
+  text-align: center;
+}
