@@ -2,8 +2,12 @@ import { useState } from "react";
 import classes from "./NavComponent.module.scss";
 
 function NavComponent(): JSX.Element {
-  const navList = ["home", "skills", "experience", "education", "portfolio"];
+  const navList = ["home","about me", "skills", "experience", "education", "portfolio"];
   const [flag, setFlag] = useState<boolean>(false);
+
+  function handleFlag() {
+    setFlag(!flag);
+  }
   return (
     <nav className={classes.nav}>
       <ul className={classes.list}>
@@ -14,7 +18,9 @@ function NavComponent(): JSX.Element {
         ))}
       </ul>
 
-      <button className={classes.btn}>menu</button>
+      <button onClick={handleFlag} className={classes.btn}>
+        menu
+      </button>
     </nav>
   );
 }

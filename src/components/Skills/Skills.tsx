@@ -98,6 +98,7 @@ function Skills() {
           <figcaption>Github</figcaption>
         </figure>
       </div>
+      <p className={classes.text}> and others ...</p>
     </section>
   );
 }

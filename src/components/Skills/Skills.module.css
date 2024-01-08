@@ -8,6 +8,11 @@
   font-size: 3rem;
 }
 
+.skills .text {
+  font-size: 2rem;
+  text-align: center;
+}
+
 .skills .icon_wrapper {
   max-width: 980px;
   margin: 0 auto;
