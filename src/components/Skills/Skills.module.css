@@ -1,5 +1,9 @@
 .skills {
   padding: 40px 0 80px;
+  background-image: url("../../assets/rocket-154997_640.png");
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .skills .box_custom {

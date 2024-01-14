@@ -36,7 +36,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
     <section className={classes.skills}>
       <Container className="fluid">
         <Columns>
-          <Columns.Column>
+          <Columns.Column size={7}>
             {" "}
             <Heading>SKILLS</Heading>
             <Heading className="subtitle">Subtitle</Heading>
@@ -195,8 +195,10 @@ function Skills({ fluid = true }: BulmaContainerProps) {
               </Box>
             </Columns.Column>
           </Columns>
+          <Columns.Column>
+            <Box className="is-size-3">And others ....</Box>
+          </Columns.Column>
         </div>
-        <p className={classes.text}> and others ...</p>
       </Container>
     </section>
   );

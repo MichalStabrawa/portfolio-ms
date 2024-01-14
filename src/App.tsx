@@ -1,17 +1,30 @@
 import React from "react";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 import "./App.css";
-import NavComponent from "./components/Navigation/NavComponent";
-import Skills from "./components/Skills/Skills";
+import Home from "./pages/Home";
+import SkillsPage from "./pages/SkillsPage";
+import Route from "./pages/Route";
+import AboutMe from "./pages/AboutMe";
 
-import HeaderComponent from "./components/Header/HeaderComponent";
+
 
 function App() {
+  const router = createHashRouter([
+    {
+      path: "/",
+      element: <Route />,
+      errorElement: <SkillsPage/>,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "/aboutUs", element: <AboutMe /> },
+  
+      ],
+    },  
+  ]);
   return (
     <div className="App">
-      <NavComponent />
-      <HeaderComponent title="Front End Developer" name="Michal Stabrawa" />
-      <Skills />
+      <RouterProvider router={router} />
     </div>
   );
 }

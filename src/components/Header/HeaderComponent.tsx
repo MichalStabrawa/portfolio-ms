@@ -16,7 +16,7 @@ function HeaderComponent({ title, name }: HeaderProps) {
         <h2>{name}</h2>
         <div className={classes.btn_wrapper}>
           {" "}
-          <Button color="primary">My Bulma button</Button>
+          <Button color="primary">More ...</Button>
         </div>
       </div>
     </header>
