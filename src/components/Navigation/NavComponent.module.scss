@@ -1,3 +1,5 @@
+@import '../../style/main.scss';
+
 .nav {
   width: 100%;
   color: #fff;
@@ -7,6 +9,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: #000;
+
+.active {
+  color:$orange;
+}
+ 
 
   .btn {
     display:none;
@@ -19,6 +26,13 @@
     padding: 0;
     &__item {
       margin-left: 10px;
+    }
+    
+    a {
+      color:$grey;
+      &.active {
+        color:$orange;
+      }
     }
   }
 }
