@@ -9,6 +9,10 @@
   background-color: #000;
 }
 
+.nav a .active {
+  color: red;
+}
+
 .nav .btn {
   display: none;
 }

@@ -17,7 +17,8 @@ function App() {
       errorElement: <SkillsPage/>,
       children: [
         { index: true, element: <Home /> },
-        { path: "/aboutUs", element: <AboutMe /> },
+        { path: "/about", element: <AboutMe /> },
+        { path: "/skills", element: <SkillsPage /> },
   
       ],
     },  
