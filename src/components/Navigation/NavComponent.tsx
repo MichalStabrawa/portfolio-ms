@@ -24,7 +24,7 @@ function NavComponent(): JSX.Element {
       <ul className={classes.list}>
         {navList.map((el) => (
           <li className={classes.list__item} key={el.name}>
-            <NavLink to={el.link} className={({isActive})=>isActive?'active':undefined}>{el.name}</NavLink>
+            <NavLink to={el.link} className={({isActive})=>isActive?classes.active:undefined}>{el.name}</NavLink>
           </li>
         ))}
       </ul>

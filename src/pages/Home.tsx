@@ -3,7 +3,7 @@ import HeaderComponent from "../components/Header/HeaderComponent";
 function Home() {
   return (
     <>
-      <HeaderComponent name="Michal" title="Front End Developer" />
+      <HeaderComponent name="Michal Stabrawa" title="Front End Developer" />
     </>
   );
 }

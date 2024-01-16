@@ -39,7 +39,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
           <Columns.Column size={7}>
             {" "}
             <Heading>SKILLS</Heading>
-            <Heading className="subtitle">Subtitle</Heading>
+            <Heading className="subtitle">Below are my main technolgies which I use or used in projects</Heading>
           </Columns.Column>
         </Columns>
 
