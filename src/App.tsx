@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import SkillsPage from "./pages/SkillsPage";
 import Route from "./pages/Route";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/about/AboutMe";
 
 
 

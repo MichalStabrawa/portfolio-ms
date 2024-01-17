@@ -1,12 +1,19 @@
 .skills {
   padding: 40px 0 80px;
-  background-image: url("../../assets/rocket-154997_640.png");
-  background-position: left;
+  background-image: url("../../assets/mercury-6618698_1920.jpg");
+  background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
+  color: #E6EAE2;
+  min-height: calc(100vh - 90px);
 }
 
 .skills .box_custom {
   height: 100%;
   text-align: center;
+  background-color: #000;
+}
+
+.skills .title {
+  margin-bottom: 10px;
 }

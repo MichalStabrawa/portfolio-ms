@@ -13,7 +13,7 @@ function HeaderComponent({ title, name }: HeaderProps) {
     <header className={classes.header}>
       <div className={classes.header__wrapper}>
         {" "}
-        <h1 className={classes.title}>{title}</h1>
+        <h1 className={classes.title}>{`<${title}>`}</h1>
         <h2>{name}</h2>
         <div className={classes.btn_wrapper}>
           {" "}
