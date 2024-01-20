@@ -1,0 +1,20 @@
+@import '../../style/main.scss';
+
+.about {
+    color:#fff;
+    padding: 40px 20px 80px;
+    height: calc(100vh - 90px);
+    background-image:linear-gradient(to left, rgba(211, 119, 14, 0.8), rgba(77, 72, 75, 0.8)), url('../../assets/space-89130_1920.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply,multiply;
+
+    h1 {
+        color:#fff;
+    }
+
+    p{
+        font-size:1.5rem;
+    }
+}

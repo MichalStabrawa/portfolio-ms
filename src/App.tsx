@@ -5,9 +5,20 @@ import "./App.css";
 import Home from "./pages/Home";
 import SkillsPage from "./pages/SkillsPage";
 import Route from "./pages/Route";
-import AboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/about/AboutMe";
 
+export type titleProps = {
+  home:string,
+  about:string,
+  skills:string,
 
+}
+
+const title:titleProps = {
+home:'Frontend Developer',
+about:'<ABOUT ME>',
+skills:'Skills'
+}
 
 function App() {
   const router = createHashRouter([
@@ -17,7 +28,7 @@ function App() {
       errorElement: <SkillsPage/>,
       children: [
         { index: true, element: <Home /> },
-        { path: "/about", element: <AboutMe /> },
+        { path: "/about", element: <AboutMe title={title.about} /> },
         { path: "/skills", element: <SkillsPage /> },
   
       ],
