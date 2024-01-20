@@ -5,10 +5,10 @@
   height: calc(100vh - 80px);
 
   background-color: #000;
-  background-image: url('../../assets/space-7011298_1920.jpg');
-  background-position:right top;
+  background-image: url("../../assets/space-7011298_1920.jpg");
+  background-position: right top;
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
   color: #fff;
   padding: 20px;
   display: flex;
@@ -18,7 +18,7 @@
   h1,
   h2 {
     text-align: center;
-    color:$grey;
+    color: $grey;
   }
 
   .title {
@@ -26,7 +26,7 @@
   }
 
   .btn_wrapper {
-    margin-top:40px;
+    margin-top: 40px;
     text-align: center;
   }
 }

@@ -1,0 +1,48 @@
+@import "../../style/main.scss";
+
+.experience {
+  min-height: calc(100vh - 90px);
+  padding: 40px 20px 80px;
+  background-image: url("../../assets/abstract-7342914_1920.jpg");
+  color: #fff;
+  background-position: left ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .head {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .head,
+  .subtitle {
+    color: #fff;
+  }
+
+  .box {
+    background-color: rgba(8, 0, 0, 30%);
+    color: #fff;
+    border: 1px solid #060608;
+
+    &_title {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      color: #65fcff;
+      margin: 10px 0;
+      font-size: 1.25rem;
+    }
+    p {
+      margin-bottom: 5px;
+      font-size:18px;
+    }
+    .wrapper {
+      display: flex;
+    }
+  }
+
+  .block {
+    background-color: transparent;
+  }
+}

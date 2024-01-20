@@ -1,37 +1,42 @@
+@import "../../style/main.scss";
+
 .skills {
   padding: 40px 0 80px;
-  background-image: url('../../assets/moon-2048727_1920.jpg');
+  background-image: url("../../assets/dashboard-7279562_1920.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color:#E6EAE2;
+  color: #e6eae2;
   min-height: calc(100vh - 90px);
 
-  h1,p{
-    color:#fff;
+  h1,
+  p {
+    color: #fff;
   }
   h1 {
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
   }
 
   .box_custom {
     height: 100%;
     text-align: center;
-    background-color: transparent;
-    color:#fff;
-    border: 1px solid grey;
+    background-color: rgba(10, 10, 17, 0.6);
+    color: #fff;
+    border: 1px solid #294457;
   }
 
   .title {
     margin-bottom: 10px;
-    color:#fff;
+    color: #9e9fa0;
   }
 
   .head {
-    padding-bottom: 30px;
+    font-size: 3rem;
   }
 
   .others {
-    font-size: 1.5rem;;
+    font-size: 1.6rem;
+    color: $orange;
+    font-weight: bold;
   }
 }

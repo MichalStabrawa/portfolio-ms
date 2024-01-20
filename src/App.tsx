@@ -6,33 +6,35 @@ import Home from "./pages/Home";
 import SkillsPage from "./pages/SkillsPage";
 import Route from "./pages/Route";
 import AboutMe from "./pages/about/AboutMe";
+import ExperiencePage from "./pages/experience/ExperiencePage";
+import EducationPage from "./pages/education/EducationPage";
 
 export type titleProps = {
-  home:string,
-  about:string,
-  skills:string,
+  home: string;
+  about: string;
+  skills: string;
+};
 
-}
-
-const title:titleProps = {
-home:'Frontend Developer',
-about:'<ABOUT ME>',
-skills:'Skills'
-}
+const title: titleProps = {
+  home: "<Frontend Developer>",
+  about: "<ABOUT ME>",
+  skills: "<Skills>",
+};
 
 function App() {
   const router = createHashRouter([
     {
       path: "/",
       element: <Route />,
-      errorElement: <SkillsPage/>,
+      errorElement: <SkillsPage />,
       children: [
         { index: true, element: <Home /> },
         { path: "/about", element: <AboutMe title={title.about} /> },
         { path: "/skills", element: <SkillsPage /> },
-  
+        { path: "/experience", element: <ExperiencePage /> },
+        {path: '/education', element: <EducationPage/>}
       ],
-    },  
+    },
   ]);
   return (
     <div className="App">

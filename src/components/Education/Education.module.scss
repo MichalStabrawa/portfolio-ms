@@ -1,0 +1,43 @@
+@import "../../style/main.scss";
+
+.education {
+  background-image: url("../../assets/space-station-4934418_1920.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 40px 20px 80px;
+  min-height: calc(100vh - 90px);
+
+  .head {
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .subtitle {
+    color: #c19c88;
+  }
+  .list_title {
+    font-size: 1.5rem;
+  }
+
+  .list,.list_courses {
+    & > li {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 3px solid red;
+      background-color: rgba(31, 3, 47, 30%);
+
+      p {
+        margin: 10px 0;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .list_courses {
+&>li {
+    border-color:#310487 ;
+}
+  }
+}

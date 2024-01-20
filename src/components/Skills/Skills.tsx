@@ -1,5 +1,6 @@
 import classes from "./Skills.module.scss";
 import {
+  FaInvision,
   FaReact,
   FaHtml5,
   FaCss3Alt,
@@ -9,14 +10,19 @@ import {
   FaNpm,
   FaFigma,
   FaGithub,
+  FaBootstrap,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
+  SiJest,
+  SiBulma,
+  SiJquery,
   SiNextdotjs,
   SiTypescript,
   SiNuxtdotjs,
   SiFirebase,
   SiJira,
+  SiRedux,
 } from "react-icons/si";
 import { Container, Columns, Box, Heading } from "react-bulma-components";
 
@@ -30,6 +36,7 @@ interface BulmaContainerProps {
 }
 
 const sizeIcon: size = "3.9rem";
+const sizeNode: size = "4rem";
 
 function Skills({ fluid = true }: BulmaContainerProps) {
   return (
@@ -39,7 +46,10 @@ function Skills({ fluid = true }: BulmaContainerProps) {
           <Columns.Column size={7}>
             {" "}
             <Heading className={classes.head}>{`<SKILLS>`}</Heading>
-            <Heading className="subtitle">Below are my main technolgies which I use or used in projects.</Heading>
+            <Heading className={classes.subtitle}>
+              Below are my main technologies that I use or have used in previous
+              projects.
+            </Heading>
           </Columns.Column>
         </Columns>
 
@@ -56,12 +66,30 @@ function Skills({ fluid = true }: BulmaContainerProps) {
               </Box>
             </Columns.Column>{" "}
             <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <SiRedux size={sizeIcon} color={"#764ABC"} />
+                  <figcaption>Redux</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
               {" "}
               <Box className={classes.box_custom}>
                 {" "}
                 <figure>
                   <IoLogoJavascript size={sizeIcon} color={"#EFD81D"} />
                   <figcaption>Java Script</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <SiTypescript size={sizeIcon} color={"#3178c6"} />
+                  <figcaption>Type Script</figcaption>
                 </figure>
               </Box>
             </Columns.Column>
@@ -110,7 +138,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
               <Box className={classes.box_custom}>
                 {" "}
                 <figure>
-                  <SiNextdotjs size={sizeIcon} color={"#171717"} />
+                  <SiNextdotjs size={sizeIcon} color={"#515151"} />
                   <figcaption>NEXT.js</figcaption>
                 </figure>
               </Box>
@@ -120,20 +148,12 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 {" "}
                 <figure>
                   {" "}
-                  <FaNode size={sizeIcon} color={"#43853D"} />{" "}
+                  <FaNode size={sizeNode} color={"#43853D"} />{" "}
                   <figcaption>Node.js</figcaption>
                 </figure>
               </Box>
             </Columns.Column>
-            <Columns.Column>
-              <Box className={classes.box_custom}>
-                {" "}
-                <figure>
-                  <SiTypescript size={sizeIcon} color={"#3178c6"} />
-                  <figcaption>Type Script</figcaption>
-                </figure>
-              </Box>
-            </Columns.Column>
+
             <Columns.Column>
               <Box className={classes.box_custom}>
                 {" "}
@@ -144,8 +164,6 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 </figure>
               </Box>
             </Columns.Column>
-          </Columns>
-          <Columns>
             <Columns.Column>
               <Box className={classes.box_custom}>
                 {" "}
@@ -160,9 +178,8 @@ function Skills({ fluid = true }: BulmaContainerProps) {
               <Box className={classes.box_custom}>
                 {" "}
                 <figure>
-                  {" "}
-                  <FaFigma size={sizeIcon} color={"#9747ff"} />
-                  <figcaption>Figma</figcaption>
+                  <SiJest size={sizeIcon} color={"#9C475F"} />
+                  <figcaption>Jest</figcaption>
                 </figure>
               </Box>
             </Columns.Column>
@@ -176,6 +193,19 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 </figure>
               </Box>
             </Columns.Column>
+          </Columns>
+          <Columns>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  {" "}
+                  <FaFigma size={sizeIcon} color={"#9747ff"} />
+                  <figcaption>Figma</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+
             <Columns.Column>
               <Box className={classes.box_custom}>
                 {" "}
@@ -194,11 +224,57 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 </figure>
               </Box>
             </Columns.Column>
+
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <FaInvision size={sizeIcon} color={"#FF3366"} />
+                  <figcaption>Invision</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <SiJquery size={sizeIcon} color={"#005AA2"} />
+                  <figcaption>JQuery</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <FaBootstrap size={sizeIcon} color={"#8712F7"} />
+                  <figcaption>Bootstrap</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <SiBulma size={sizeIcon} color={"#00D1B2"} />
+                  <figcaption>Bulma</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
           </Columns>
-          <Columns.Column>
-        <h2 className={classes.others}>   And others such as Redux, Redux Toolkit , Galen Framework ,Adobe Experience Meneager ,Invison...</h2>
-       
-          </Columns.Column>
+          <Columns>
+            {" "}
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <h2 className={classes.others}>
+                  {" "}
+                  And others such as Recharts , Galen Framework ,Adobe
+                  Experience Meneager, Gitlab ...
+                </h2>
+              </Box>
+            </Columns.Column>
+          </Columns>
         </div>
       </Container>
     </section>

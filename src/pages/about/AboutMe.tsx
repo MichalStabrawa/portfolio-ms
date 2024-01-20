@@ -17,7 +17,7 @@ function AboutMe({ title }: AboutMeProps) {
       <Container className="fluid">
         {" "}
         <Content>
-          <h1>{title}</h1>
+          <h1 className={classes.title}>{title}</h1>
           <p>
             I am Michał and I'm Front End Developer. I have a few years
             experience at UI Developer. I worked for 3 companies and made many
