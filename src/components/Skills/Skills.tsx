@@ -196,7 +196,8 @@ function Skills({ fluid = true }: BulmaContainerProps) {
             </Columns.Column>
           </Columns>
           <Columns.Column>
-          And others ....
+        <h2 className={classes.others}>   And others such as Redux, Redux Toolkit , Galen Framework ,Adobe Experience Meneager ,Invison...</h2>
+       
           </Columns.Column>
         </div>
       </Container>
