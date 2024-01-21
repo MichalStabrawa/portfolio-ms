@@ -8,17 +8,20 @@ import Route from "./pages/Route";
 import AboutMe from "./pages/about/AboutMe";
 import ExperiencePage from "./pages/experience/ExperiencePage";
 import EducationPage from "./pages/education/EducationPage";
+import PortfolioPage from "./pages/portfolio/PortfolioPage";
 
 export type titleProps = {
   home: string;
   about: string;
   skills: string;
+  portfolio:string
 };
 
 const title: titleProps = {
   home: "<Frontend Developer>",
   about: "<ABOUT ME>",
   skills: "<Skills>",
+  portfolio: "<PORTFOLIO>"
 };
 
 function App() {
@@ -32,7 +35,8 @@ function App() {
         { path: "/about", element: <AboutMe title={title.about} /> },
         { path: "/skills", element: <SkillsPage /> },
         { path: "/experience", element: <ExperiencePage /> },
-        {path: '/education', element: <EducationPage/>}
+        {path: '/education', element: <EducationPage/>},
+        {path: '/portfolio',element: <PortfolioPage title={title.portfolio}/>}
       ],
     },
   ]);

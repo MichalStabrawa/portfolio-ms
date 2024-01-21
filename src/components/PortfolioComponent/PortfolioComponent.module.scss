@@ -1,0 +1,19 @@
+@import '../../style/main.scss';
+
+.portfolio {
+    min-height: calc(100vh - 90px);
+    background-image: url('../../assets/science-fiction-2793428.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding:40px 20px 80px;
+
+    h1 {
+        color:#fff;
+        font-size: 3rem;;
+    }
+
+    .is_4by3 {
+        padding-bottom: 75%;
+    }
+}
