@@ -1,27 +1,31 @@
 @import "../../style/main.scss";
 
 .about {
-  color: #fff;
+  color: #000;
   padding: 40px 20px 80px;
-  height: calc(100vh - 90px);
-  background-image: linear-gradient(
-      to bottom,
-      rgba(19, 85, 143, 0.8),
-      rgba(77, 72, 75, 0.8)
-    ),
-    url("../../assets/astronaut-1849401_1920.jpg");
-  background-position: top;
+
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-blend-mode: multiply, multiply;
 
-  .title {
-    font-size: 3rem;;
-    color: #fff;
-    margin-bottom: 40px;
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
 
-  p {
-    font-size: 1.5rem;
+  .title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 40px;
+    display: inline-block;
+    &::after {
+      display: flex;
+      content: "";
+      border: 2px solid $grey;
+    }
+  }
+  .description {
+    font-size: 1.125rem;
   }
 }

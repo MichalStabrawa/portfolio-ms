@@ -14,12 +14,12 @@ function HeaderComponent({ title, name }: HeaderProps) {
       <div className={classes.header__wrapper}>
         {" "}
         <h1 className={classes.title}>{`<${title}>`}</h1>
-        <h2>{name}</h2>
+        <h2>{`<${name}/>`}</h2>
         <div className={classes.btn_wrapper}>
           {" "}
           <Link to="about">
             {" "}
-            <Button color="primary">More about me</Button>
+            <Button className="button is-medium"  >More about me</Button>
           </Link>
         </div>
       </div>
