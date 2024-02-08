@@ -2,16 +2,16 @@
 
 .skills {
   padding: 40px 0 80px;
-  background-image: url("../../assets/dashboard-7279562_1920.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../../assets/undraw_percentages_re_a1ao.svg");
+  background-position: top right;
+  background-size: auto;
   background-repeat: no-repeat;
   color: #e6eae2;
   min-height: calc(100vh - 90px);
 
   h1,
   p {
-    color: #fff;
+    color: #000;
   }
   h1 {
     margin-bottom: 20px;
@@ -20,23 +20,23 @@
   .box_custom {
     height: 100%;
     text-align: center;
-    background-color: rgba(10, 10, 17, 0.6);
-    color: #fff;
-    border: 1px solid #294457;
-  }
-
-  .title {
-    margin-bottom: 10px;
-    color: #9e9fa0;
+    background-color: rgba(246, 246, 248, 0.7);
+    color: #000;
+ 
   }
 
   .head {
     font-size: 3rem;
+    display: inline-block;
+    &::after {
+      display: flex;
+      content: "";
+      border: 2px solid $grey;
+    }
   }
 
   .others {
-    font-size: 1.6rem;
-    color: $orange;
+    font-size: 1.25rem;
     font-weight: bold;
   }
 }
