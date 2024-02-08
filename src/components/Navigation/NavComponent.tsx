@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { NavLink ,type NavLinkProps} from "react-router-dom";
+import { Link, NavLink, type NavLinkProps } from "react-router-dom";
 import classes from "./NavComponent.module.scss";
+import { Navbar } from "react-bulma-components";
 
 function NavComponent(): JSX.Element {
   const navList = [
@@ -10,29 +11,35 @@ function NavComponent(): JSX.Element {
     { name: "experience", link: "experience" },
     { name: "education", link: "education" },
     { name: "portfolio", link: "portfolio" },
-
   ];
 
-
   const [flag, setFlag] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  function handleFlag() {
-    setFlag(!flag);
+  function handleMenuToggle() {
+    setIsMenuOpen(!isMenuOpen);
   }
-  return (
-    <nav className={classes.nav}>
-      <ul className={classes.list}>
-        {navList.map((el) => (
-          <li className={classes.list__item} key={el.name}>
-            <NavLink to={el.link} className={({isActive})=>isActive?classes.active:undefined}>{el.name}</NavLink>
-          </li>
-        ))}
-      </ul>
 
-      <button onClick={handleFlag} className={classes.btn}>
-        menu
-      </button>
-    </nav>
+  return (
+    <Navbar>
+      <Navbar.Brand>
+        <Navbar.Burger onClick={handleMenuToggle} />
+      </Navbar.Brand>
+      <Navbar.Menu className={`navbar-menu ${isMenuOpen ? "is-active" : ""}`}>
+        <Navbar.Container>
+          {navList &&
+            navList.map((el) => {
+              return (
+                <Navbar.Item key={el.name}>
+                  <NavLink to={el.link} className={({isActive})=>isActive?classes.active:classes.link}>
+                    {el.name}
+                  </NavLink>
+                </Navbar.Item>
+              );
+            })}
+        </Navbar.Container>
+      </Navbar.Menu>
+    </Navbar>
   );
 }
 
