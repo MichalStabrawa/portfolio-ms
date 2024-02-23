@@ -13,6 +13,7 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { TbBrandReactNative } from "react-icons/tb";
 import {
   SiJest,
   SiBulma,
@@ -23,6 +24,7 @@ import {
   SiFirebase,
   SiJira,
   SiRedux,
+  SiTailwindcss
 } from "react-icons/si";
 import { Container, Columns, Box, Heading } from "react-bulma-components";
 
@@ -60,7 +62,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
               <Box className={classes.box_custom}>
                 {" "}
                 <figure>
-                  <FaReact size={sizeIcon} color={"#61dafb"} />
+                  <FaReact size={sizeIcon} color={"#087EA4"} />
                   <figcaption>React.js</figcaption>
                 </figure>
               </Box>
@@ -124,6 +126,16 @@ function Skills({ fluid = true }: BulmaContainerProps) {
             </Columns.Column>
           </Columns>
           <Columns>
+          <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  {" "}
+                  <TbBrandReactNative size={sizeIcon} color={"#60D8F8"}/>
+                  <figcaption>React Native</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
             <Columns.Column>
               <Box className={classes.box_custom}>
                 {" "}
@@ -164,16 +176,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 </figure>
               </Box>
             </Columns.Column>
-            <Columns.Column>
-              <Box className={classes.box_custom}>
-                {" "}
-                <figure>
-                  {" "}
-                  <FaNpm size={sizeIcon} color={"#cb3837"} />
-                  <figcaption>Npm</figcaption>
-                </figure>
-              </Box>
-            </Columns.Column>
+         
             <Columns.Column>
               <Box className={classes.box_custom}>
                 {" "}
@@ -212,6 +215,16 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 <figure>
                   <SiJira size={sizeIcon} color={"#1269E4"} />
                   <figcaption>Jira</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  {" "}
+                  <FaNpm size={sizeIcon} color={"#cb3837"} />
+                  <figcaption>Npm</figcaption>
                 </figure>
               </Box>
             </Columns.Column>
@@ -261,6 +274,15 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 </figure>
               </Box>
             </Columns.Column>
+            <Columns.Column>
+              <Box className={classes.box_custom}>
+                {" "}
+                <figure>
+                  <SiTailwindcss size={sizeIcon} color={"#38BDF8"} />
+                  <figcaption>Tailwind</figcaption>
+                </figure>
+              </Box>
+            </Columns.Column>
           </Columns>
           <Columns>
             {" "}
@@ -269,7 +291,7 @@ function Skills({ fluid = true }: BulmaContainerProps) {
                 {" "}
                 <h2 className={classes.others}>
                   {" "}
-                  And others such as Recharts , Galen Framework ,Adobe
+                  And others such as Apexcharts, Recharts , Galen Framework ,Adobe
                   Experience Meneager, Gitlab ...
                 </h2>
               </Box>
