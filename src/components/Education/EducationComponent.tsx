@@ -18,6 +18,12 @@ const EducationComponent = () => {
           <Columns.Column>
             <ul className={classes.list}>
               <li>
+                {" "}
+                <h3 className={classes.list_title}>Akademia WSB</h3>{" "}
+                <p>Master's studies in IT.</p> <p>Cloud Computing</p>
+                <span>March 2024 </span>
+              </li>
+              <li>
                 <h3 className={classes.list_title}>
                   Bialystok University of Technology
                 </h3>
