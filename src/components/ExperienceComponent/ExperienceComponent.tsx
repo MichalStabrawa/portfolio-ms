@@ -28,6 +28,25 @@ const ExperienceComponent = ({ title }: ExProps) => {
         <Columns>
           <Columns.Column>
             <Box className={classes.box}>
+              <h3 className={classes.box_title}>IThouse</h3>{" "}
+              <h4>React Front End Developer</h4>
+              <p>
+                <FaCalendarAlt /> March 2024
+              </p>
+              <p>
+                I work as a React Developer on a project for public
+                administration related to document flow and permits for
+                construction.The project I'm working on is integrated with other
+                public systems such as GUS E-Budownictwo and similar ones.
+                Technologies involved include React, TypeScript, React Query,
+                Formik,Vite, REST API,Swagger and SCSS or others . I work in a Scrum team
+              </p>
+            </Box>
+          </Columns.Column>
+        </Columns>
+        <Columns>
+          <Columns.Column>
+            <Box className={classes.box}>
               {" "}
               <h3 className={classes.box_title}>HSBC Delivery</h3>{" "}
               <h4>Front End Developer</h4>
